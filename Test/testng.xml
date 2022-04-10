@@ -3,11 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Demo.Test.FirstProgram"/>
-      <class name="Demo.Test.FirstProgram4"/>
-      <class name="Demo.Test.FirstProgram2"/>
-      <class name="Demo.Test.FirstProgram5"/>
-      <class name="Demo.Test.FirstProgram3"/>
+      <class name="Demo.Test.FirstScenarioFlipkart"/>
+      <class name="Demo.Test.SecondScenarioAmazon"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

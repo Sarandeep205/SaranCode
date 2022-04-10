@@ -8,9 +8,6 @@
   <artifactId>Test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>Test</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,20 +19,20 @@
 <dependency>
   		<groupId>org.seleniumhq.selenium</groupId>
   		<artifactId>selenium-java</artifactId>
-  		<version>3.141.59</version>
+  		<version>3.14.0</version>
   	</dependency>
 
   <dependency>
 <groupId>io.github.bonigarcia</groupId>
 <artifactId>webdrivermanager</artifactId>
-<version>3.6.1</version>
+<version>3.7.1</version>
 </dependency>
 
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.4.0</version>
+    <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
@@ -59,10 +56,7 @@
         <directory>src/main/resources</directory>
         <filtering>true</filtering>
       </resource>
-    </resources>
-  
-  
-        
+    </resources>      
      
   
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
