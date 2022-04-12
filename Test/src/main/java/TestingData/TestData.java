@@ -6,11 +6,11 @@ public class TestData
 	private static String flipkartUrl = "https://www.flipkart.com";
     private static String amazonUrl = "https://www.amazon.in";
 
-    public static String getAmazonHomeUrl() {
+    public static String getAmazonUrl() {
         return amazonUrl;
     }
 
-    public static String getFlipkartHomeUrl() {
+    public static String getFlipkartUrl() {
         return flipkartUrl;
     }
 

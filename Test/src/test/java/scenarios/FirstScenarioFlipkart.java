@@ -1,4 +1,4 @@
-package Demo.Test;
+package scenarios;
 
 import java.io.IOException;
 import org.testng.annotations.Test;
@@ -14,7 +14,7 @@ public class FirstScenarioFlipkart extends BaseLibrary {
 	@Test
 	public void First() throws InterruptedException, IOException {
 
-		getURL(getFlipkartHomeUrl());
+		getURL(getFlipkartUrl());
 		flipKart = new FlipKartPage(driver);
 		flipKart.popupClose();
 		flipKart.searchTextBox(productName);
@@ -28,5 +28,4 @@ public class FirstScenarioFlipkart extends BaseLibrary {
 		System.out.println("Total amount needs to be paid to place order - " + flipKart.finalPrice());
 
 	}
-
 }

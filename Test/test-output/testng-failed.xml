@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Demo.Test.SecondScenarioAmazon">
+      <class name="scenarios.ComparisonOfPrice">
         <methods>
-          <include name="First"/>
           <include name="browserInitialization"/>
           <include name="tearDownDriver"/>
+          <include name="First"/>
         </methods>
-      </class> <!-- Demo.Test.SecondScenarioAmazon -->
+      </class> <!-- scenarios.ComparisonOfPrice -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

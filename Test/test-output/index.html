@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Demo.Test.SecondScenarioAmazon" class="method navigator-link" hash-for-method="First">First</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="scenarios.ComparisonOfPrice" class="method navigator-link" hash-for-method="First">First</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Demo.Test.FirstScenarioFlipkart" class="method navigator-link" hash-for-method="First">First</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="scenarios.FirstScenarioFlipkart" class="method navigator-link" hash-for-method="First">First</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,7 +127,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Demo.Test.FirstScenarioFlipkart</span>
+              <span class="class-name">scenarios.FirstScenarioFlipkart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -142,7 +142,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Demo.Test.SecondScenarioAmazon</span>
+              <span class="class-name">scenarios.ComparisonOfPrice</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -166,8 +166,8 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Demo.Test.FirstScenarioFlipkart&quot;/&gt;
-      &lt;class name=&quot;Demo.Test.SecondScenarioAmazon&quot;/&gt;
+      &lt;class name=&quot;scenarios.FirstScenarioFlipkart&quot;/&gt;
+      &lt;class name=&quot;scenarios.ComparisonOfPrice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -210,17 +210,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'First')
-data.setCell(0, 2, 'Demo.Test.SecondScenarioAmazon')
-data.setCell(0, 3, 16761);
+data.setCell(0, 2, 'scenarios.ComparisonOfPrice')
+data.setCell(0, 3, 15244);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'First')
-data.setCell(1, 2, 'Demo.Test.FirstScenarioFlipkart')
-data.setCell(1, 3, 11362);
+data.setCell(1, 2, 'scenarios.FirstScenarioFlipkart')
+data.setCell(1, 3, 10291);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,33 +246,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Demo.Test.FirstScenarioFlipkart</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scenarios.FirstScenarioFlipkart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">First</span>
-                <span class="method-start">1338 ms</span>
+                <span class="method-start">1242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownDriver</span>
-                <span class="method-start">12704 ms</span>
+                <span class="method-start">11539 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Demo.Test.SecondScenarioAmazon</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">scenarios.ComparisonOfPrice</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization</span>
-                <span class="method-start">13039 ms</span>
+                <span class="method-start">11711 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">First</span>
-                <span class="method-start">13674 ms</span>
+                <span class="method-start">12461 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownDriver</span>
-                <span class="method-start">30436 ms</span>
+                <span class="method-start">27707 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo.Test.SecondProgram">
+      <class name="Demo.Test.FirstScenarioFlipkart">
         <methods>
           <include name="browserInitialization"/>
           <include name="tearDownDriver"/>
           <include name="First"/>
         </methods>
-      </class> <!-- Demo.Test.SecondProgram -->
+      </class> <!-- Demo.Test.FirstScenarioFlipkart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

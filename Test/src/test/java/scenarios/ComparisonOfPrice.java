@@ -1,4 +1,4 @@
-package Demo.Test;
+package scenarios;
 
 import static TestingData.TestData.*;
 
@@ -11,7 +11,7 @@ import BaseUtility.CommonUtility;
 import PageObjectFactory.AmazonPage;
 import PageObjectFactory.FlipKartPage;
 
-public class SecondScenarioAmazon extends BaseLibrary {
+public class ComparisonOfPrice extends BaseLibrary {
 
 	FlipKartPage flipKart;
 	AmazonPage amazon;
@@ -19,7 +19,7 @@ public class SecondScenarioAmazon extends BaseLibrary {
 	@Test
 	public void First() throws InterruptedException, IOException {
 
-		getURL(getFlipkartHomeUrl());
+		getURL(getFlipkartUrl());
 		flipKart = new FlipKartPage(driver);
 		flipKart.popupClose();
 		flipKart.searchTextBox(productName);
@@ -30,14 +30,14 @@ public class SecondScenarioAmazon extends BaseLibrary {
 		float firstProductPrice = flipKart.firstProductPrice();
 		flipKart.addToCart();
 		System.out.println("Price of first searched product in Flipkart - " + flipKart.finalPrice());
-		getURL(getAmazonHomeUrl());
+		getURL(getAmazonUrl());
 		amazon = new AmazonPage(driver);
 		amazon.searchTextBox(productInFlipkart);
 		amazon.searchIconButton();
-		String[] itemNameArray = productInFlipkart.replaceAll("[^A-Z,a-z,0-9,\" \"]", "").toLowerCase().split(" ");
+		String[] itemNameArray = productInFlipkart.replaceAll("[^A-Z a-z 0-9 \" \"]", "").toLowerCase().split(" ");
 		List<WebElement> allSearchResult = amazon.getAllItems();
 		for (WebElement e : allSearchResult) {
-			String itemName = e.getText().replaceAll("[^A-Z,a-z,0-9,\" \"]", "").toLowerCase();
+			String itemName = e.getText().replaceAll("[^A-Z a-z 0-9 \" \"]", "").toLowerCase();
 			boolean found = false;
 
 			for (String eachWord : itemNameArray) {
